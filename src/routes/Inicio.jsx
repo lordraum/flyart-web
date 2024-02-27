@@ -1,5 +1,7 @@
+import MainLayOut from '../layouts/MainLayout'
+
 export default function Inicio () {
   return <>
-    <h1>Inicio</h1>
+    <MainLayOut />
   </>
 }

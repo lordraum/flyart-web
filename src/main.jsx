@@ -4,10 +4,10 @@ import '@fontsource/pacifico'
 import 'normalize.css'
 import '../src/css/style.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Inicio from './routes/Inicio'
-import AcercaDe from './routes/AcercaDe'
-import Obras from './routes/Obras'
-import Logros from './routes/Logros'
+import Inicio from './routes/inicio'
+import AcercaDe from './routes/acerca_de'
+import Obras from './routes/obras'
+import Logros from './routes/logros'
 
 const router = createBrowserRouter([
   {

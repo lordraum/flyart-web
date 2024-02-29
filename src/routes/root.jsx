@@ -17,5 +17,5 @@ export default function Root ({ children }) {
 }
 
 Root.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.array
 }

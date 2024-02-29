@@ -5,10 +5,10 @@ export default function Obra ({ image, altAttr, title, tecnique }) {
     <picture className="obra__img-box">
       <img src={image} alt={altAttr} className="obra__img" />
     </picture>
-    <body className="obra__info">
+    <div className="obra__info" role='contentinfo' aria-label='card-body'>
       <h3 className="obra__title">{title}</h3>
       <p className="tecnique">{tecnique}</p>
-    </body>
+    </div>
   </article>
 }
 

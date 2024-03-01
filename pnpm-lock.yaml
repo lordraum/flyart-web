@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/open-sans':
+    specifier: ^5.0.25
+    version: 5.0.25
   '@fontsource/pacifico':
     specifier: ^5.0.8
     version: 5.0.8
@@ -306,6 +309,10 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/open-sans@5.0.25:
+    resolution: {integrity: sha512-TQIAM60Y9h/JUoRDxiVTPL03+AzB9Vi7kzAMl9N8taBXUuKCMc0F8N/EG+GAAxMF936ecysRYx4UmwCPSGiX/g==}
+    dev: false
 
   /@fontsource/pacifico@5.0.8:
     resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}

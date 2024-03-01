@@ -28,33 +28,99 @@ h4 {
   font-family: "Pacifico", cursive;
 }
 
-.toggle-menu {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.header,
+.main,
+.footer {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.header,
+.footer,
+h2 {
+  text-align: center;
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1.5rem;
-  height: 1.25rem;
-  cursor: pointer;
 }
 
-.toggle-menu__bars {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  transition: all .5s;
-  transform-origin: left;
+.nav__menu {
+  display: flex;
+  list-style: none;
 }
 
-.menu-active :first-child {
-  rotate: 45deg;
+.toggle-menu {
+  display: none;
 }
 
-.menu-active :nth-child(2) {
-  opacity: 0;
-}
 
-.menu-active :last-child {
-  rotate: -45deg;
+/* mobile menu */
+@media screen and (width <=850px) {
+  .nav {
+    flex-direction: column-reverse;
+  }
+
+  .nav__menu {
+    display: none;
+    margin-block: 2.5rem;
+  }
+
+  .nav__menu-item {
+    background-color: rgb(83, 81, 90);
+    padding-block: .5rem;
+  }
+
+  .toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-block: 1.5rem;
+    width: 1.5rem;
+    height: 1.25rem;
+    cursor: pointer;
+    transition: all .5s;
+  }
+
+  .toggle-menu__bars {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all .5s;
+    transform-origin: left;
+  }
+
+  /* active */
+  .nav__menu--active {
+    display: block;
+  }
+
+  .toggle-menu--active {
+    margin-bottom: 0;
+    transform: translateX(4px);
+  }
+
+  .toggle-menu--active :first-child {
+    rotate: 45deg;
+  }
+
+  .toggle-menu--active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-menu--active :last-child {
+    rotate: -45deg;
+  }
 }
 
 @media (prefers-color-scheme: light) {

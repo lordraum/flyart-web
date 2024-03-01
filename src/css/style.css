@@ -5,6 +5,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* custom properties mobile first */
+  /*  --bgc-body:
+  --col-body:
+  -- */
 }
 
 * {
@@ -26,6 +31,11 @@ h2,
 h3,
 h4 {
   font-family: "Pacifico", cursive;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 a {
@@ -36,6 +46,10 @@ a {
 ul {
   padding: 0;
 }
+
+/*  */
+
+/* mobile first */
 
 .header,
 .main,
@@ -63,6 +77,55 @@ h2 {
   display: none;
 }
 
+.obras,
+.eventos,
+.encargos {
+  margin-top: 3.5rem;
+}
+
+.obras,
+.obras__box,
+.eventos,
+.eventos__box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.obra__img-box {
+  font-size: 0;
+  box-shadow: 2px 2px 10px rgba(7, 6, 7, 0.75);
+}
+
+.obra__img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.evento {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-height: 774px;
+  overflow: hidden;
+}
+
+.evento__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+.evento__title {
+  margin: 0;
+}
+
+.evento__description {
+  line-height: 1.5rem;
+  text-wrap: pretty;
+}
 
 /* mobile menu */
 @media screen and (width <=850px) {
@@ -78,6 +141,7 @@ h2 {
   .nav__menu-item {
     background-color: rgb(83, 81, 90);
     padding-block: .5rem;
+    margin-bottom: 1px;
   }
 
   .toggle-menu {

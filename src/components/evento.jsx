@@ -2,11 +2,13 @@ import PropTypes from 'prop-types'
 
 export default function Evento ({ img, alt, title, description, link }) {
   return (
-    <article className="expo">
-      <img src={img} alt={alt} className="expo__img" />
-      <h3 className="expo__title"><a href={link} className="expo__link">{title}</a>
+    <article className="evento">
+      <img src={img} alt={alt} className="evento__img" />
+      <div className="evento__info">
+      <h3 className="evento__title"><a href={link} className="evento__link">{title}</a>
         </h3>
-      <p className="expo__description">{description}</p>
+      <p className="evento__description">{description}</p>
+      </div>
     </article>
   )
 }

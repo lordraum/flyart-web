@@ -36,6 +36,7 @@ export default function ObrasSection () {
   return (
     <section className="obras">
       <h2>Obras</h2>
+      <div className="obras__box">
       {
         obras.map(({ id, image, altAttr, title, tecnique }) =>
           <Obra
@@ -47,5 +48,6 @@ export default function ObrasSection () {
           />
         )
       }
+      </div>
     </section>)
 }

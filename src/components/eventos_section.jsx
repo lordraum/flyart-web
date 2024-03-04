@@ -15,8 +15,7 @@ const eventos = [
     img: imgLaPazAnte,
     alt: 'Johan Gómez "Flyart" en la exposicón La Paz Ante Mis Ojos',
     title: 'La Paz Ante Mis Ojos',
-    description: 'Exposición realizada en Bogotá en el congreso de la república, cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas realidades y culturas, mostrando cómo las identidades renacen, los paisajes florecen de nuevo.',
-    link: 'https://www.artradelatam.com/single-collection/la-paz-ante-mis-ojos'
+    description: 'Exposición realizada en Bogotá en el congreso de la república, cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas realidades y culturas, mostrando cómo las identidades renacen, los paisajes florecen de nuevo y nos conectan con nuestra tierra, inspirándonos a vivir en armonía y recordándonos la calidez en nuestros corazones.'
   },
   {
     id: '01',
@@ -31,7 +30,7 @@ const eventos = [
     img: imgLaPazAnte,
     alt: 'Johan Gómez "Flyart" en la exposicón La Paz Ante Mis Ojos',
     title: 'La Paz Ante Mis Ojos',
-    description: 'Exposición realizada en Bogotá en el congreso de la república, cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas realidades y culturas, mostrando cómo las identidades renacen, los paisajes florecen de nuevo y nos conectan con nuestra tierra, inspirándonos a vivir en armonía y recordándonos la calidez en nuestros corazones. cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversascuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversascuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas',
+    description: 'Exposición realizada en Bogotá en el congreso de la república, cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas realidades y culturas, mostrando cómo las identidades renacen, los paisajes florecen de nuevo y nos conectan con nuestra tierra, inspirándonos a vivir en armonía y recordándonos la calidez en nuestros corazones.',
     link: 'https://www.artradelatam.com/single-collection/la-paz-ante-mis-ojos'
   }
 ]

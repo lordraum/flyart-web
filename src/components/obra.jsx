@@ -7,7 +7,7 @@ export default function Obra ({ image, altAttr, title, tecnique }) {
     </div>
     <div className="obra__info" role='contentinfo' aria-label='card-body'>
       <h3 className="obra__title">{title}</h3>
-      <p className="tecnique">{tecnique}</p>
+      <p className="obra__tecnique">{tecnique}</p>
     </div>
   </article>
 }

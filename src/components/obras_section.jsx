@@ -35,7 +35,7 @@ const obras = [
 export default function ObrasSection () {
   return (
     <section className="obras">
-      <h2>Obras</h2>
+      <h2 className='obras__title' >Obras</h2>
       <div className="obras__box">
       {
         obras.map(({ id, image, altAttr, title, tecnique }) =>

@@ -8,7 +8,7 @@ dependencies:
   '@fontsource-variable/open-sans':
     specifier: ^5.0.25
     version: 5.0.25
-  '@fontsource/pacifico':
+  '@fontsource/baumans':
     specifier: ^5.0.8
     version: 5.0.8
   normalize.css:
@@ -314,8 +314,8 @@ packages:
     resolution: {integrity: sha512-TQIAM60Y9h/JUoRDxiVTPL03+AzB9Vi7kzAMl9N8taBXUuKCMc0F8N/EG+GAAxMF936ecysRYx4UmwCPSGiX/g==}
     dev: false
 
-  /@fontsource/pacifico@5.0.8:
-    resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
+  /@fontsource/baumans@5.0.8:
+    resolution: {integrity: sha512-brTK1YYIWaQN7qoH5JWpmNwiJau8A9p2CIOe92oFKxr4bzKYl2rh5R0A+uOFMF+jcO4LAAjtJ2dmAZGetlCp0A==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo-flyart-100-px.png'
+import logo from '../assets/logo-flyart.png'
 import Proptypes from 'prop-types'
 import Nav from './nav'
 

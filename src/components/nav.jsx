@@ -32,7 +32,7 @@ export default function Nav () {
       <ul className={`nav__menu ${isMenuActive ? 'nav__menu--active' : ''}`}>
         {menuItems.map(({ page, path }) => (
           <li className='nav__menu-item' key={page}>
-            <Link to={path}>{page}</Link>
+            <Link className='nav__menu-link' to={path}>{page}</Link>
           </li>
         ))}
       </ul>

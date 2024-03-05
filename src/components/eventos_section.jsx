@@ -38,7 +38,7 @@ const eventos = [
 export default function eventosSection () {
   return (
     <section className="eventos">
-      <h2>Eventos</h2>
+      <h2><a href="#">Eventos</a></h2>
       <div className="eventos__box">
       {
         eventos.map(({ id, img, alt, title, description, link }) => {

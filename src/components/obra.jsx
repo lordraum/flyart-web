@@ -6,7 +6,8 @@ export default function Obra ({ image, altAttr, title, tecnique }) {
       <img src={image} alt={altAttr} className="obra__img" />
     </div>
     <div className="obra__info" role='contentinfo' aria-label='card-body'>
-      <h3 className="obra__title">{title}</h3>
+      <h3 className="obra__title">
+        <a href="#">{title}</a></h3>
       <p className="obra__tecnique">{tecnique}</p>
     </div>
   </article>

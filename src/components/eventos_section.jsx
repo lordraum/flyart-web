@@ -11,14 +11,14 @@ const eventos = [
     link: 'https://www.artradelatam.com/single-collection/la-paz-ante-mis-ojos'
   },
   {
-    id: '01',
+    id: '02',
     img: imgLaPazAnte,
     alt: 'Johan Gómez "Flyart" en la exposicón La Paz Ante Mis Ojos',
     title: 'La Paz Ante Mis Ojos',
     description: 'Exposición realizada en Bogotá en el congreso de la república, cuyo objetivo fue resaltar la belleza de nuestro país a través de historias que reflejen diversas realidades y culturas, mostrando cómo las identidades renacen, los paisajes florecen de nuevo y nos conectan con nuestra tierra, inspirándonos a vivir en armonía y recordándonos la calidez en nuestros corazones.'
   },
   {
-    id: '01',
+    id: '03',
     img: imgLaPazAnte,
     alt: 'Johan Gómez "Flyart" en la exposicón La Paz Ante Mis Ojos',
     title: 'La Paz Ante Mis Ojos',
@@ -26,7 +26,7 @@ const eventos = [
     link: 'https://www.artradelatam.com/single-collection/la-paz-ante-mis-ojos'
   },
   {
-    id: '01',
+    id: '04',
     img: imgLaPazAnte,
     alt: 'Johan Gómez "Flyart" en la exposicón La Paz Ante Mis Ojos',
     title: 'La Paz Ante Mis Ojos',

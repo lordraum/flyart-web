@@ -32,7 +32,7 @@ export default function EncargosSection ({ title, description }) {
             onClick={() => handleClick('right')}data-chevron="right"
             className='encargos__chevron'/>
         </div>
-        <section
+        <div
           ref={galleryRef}
           className="encargos__images"
         >
@@ -44,7 +44,7 @@ export default function EncargosSection ({ title, description }) {
           <img src={image} alt="sfd" />
           <img src={image} alt="sfd" />
           <img src={image} alt="sfd" />
-        </section>
+        </div>
       </article>
     </section>
   )

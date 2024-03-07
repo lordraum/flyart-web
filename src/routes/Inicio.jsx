@@ -1,6 +1,7 @@
 import ObrasSection from '../components/obras_section'
 import EventosSection from '../components/eventos_section'
 import EncargosSection from '../components/encargos_section'
+import OpinionesSection from '../components/opiniones_section'
 import Root from './root'
 
 const title = 'Lorem ipsum dolor sit amet consectetur.'
@@ -12,6 +13,7 @@ export default function Inicio () {
       <ObrasSection />
       <EventosSection/>
       <EncargosSection title={title} description={paragraph}/>
+      <OpinionesSection />
     </Root>
   </>
 }

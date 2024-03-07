@@ -11,11 +11,11 @@ export default function SiteHeader ({ person, occupation, institution }) {
         <Link to={'/'}>
           <img className='hero__logo' src={logo} alt="logo flyart" />
         </Link>
-        <section className='hero__info'>
+        <div className='hero__info'>
         <h1>{person}</h1>
           <p className="occupation">{occupation}</p>
           <p className="institution">{institution}</p>
-        </section>
+        </div>
       </article>
     </header>
   )

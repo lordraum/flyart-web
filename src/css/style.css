@@ -18,6 +18,8 @@
   --box-sh-01: 2px 2px 10px rgba(7, 6, 7, 0.75);
 }
 
+/* global - reset */
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +29,12 @@ body {
   background-color: var(--bgc-body);
   font-family: 'Open Sans Variable', sans-serif;
   scroll-behavior: smooth;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 img {
@@ -45,6 +53,7 @@ h2 {
   font-size: 2em;
 }
 
+h2,
 h2 a,
 h3 a {
   color: var(---clr-subtitle);
@@ -59,6 +68,15 @@ ul {
   padding: 0;
 }
 
+/* resetear margen que afecta el flex-gap de main */
+h2 {
+  margin: 0;
+}
+
+section article:last-of-type p {
+  margin-bottom: 0;
+}
+
 /*  */
 
 /* mobile first */
@@ -70,6 +88,13 @@ ul {
   margin-inline: auto;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-block: 3.5rem;
+}
+
 .header,
 .footer,
 h2 {
@@ -77,7 +102,6 @@ h2 {
 }
 
 .header {
-  margin-bottom: 3rem;
   padding: 2rem;
   color: var(--clr-header);
   background-color: var(--bgc-header);
@@ -98,19 +122,6 @@ h2 {
 
 .hero__logo {
   filter: contrast();
-}
-
-.obras,
-.eventos {
-  margin-top: 1.5rem;
-}
-
-.obras,
-.obras__box,
-.eventos {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .obra__img,
@@ -136,8 +147,6 @@ h2 {
 .evento {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
-  height: 774px;
 }
 
 .evento__img {
@@ -148,18 +157,12 @@ h2 {
 .evento__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-basis: 100%;
 }
 
 .evento__description,
 .encargos__description {
   line-height: 1.5rem;
   text-wrap: pretty;
-}
-
-.encargos {
-  margin-top: 2.5rem;
 }
 
 .encargos__gallery {
@@ -181,10 +184,6 @@ h2 {
   flex-shrink: 0;
 }
 
-.encargos__description {
-  margin-bottom: 2rem;
-}
-
 .encargos__controls {
   display: flex;
   justify-content: space-between;
@@ -203,6 +202,12 @@ h2 {
 .encargos__chevron--left {
   transform: rotateY(180deg);
 }
+
+section {
+  border: 1px solid;
+}
+
+.opiniones {}
 
 /* mobile menu */
 @media screen and (width <=850px) {

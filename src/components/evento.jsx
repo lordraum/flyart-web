@@ -18,5 +18,5 @@ Evento.propTypes = {
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired
+  link: PropTypes.string
 }

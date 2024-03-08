@@ -73,7 +73,7 @@ h2 {
   margin: 0;
 }
 
-section article:last-of-type p {
+section:not.opiniones article:last-of-type p {
   margin-bottom: 0;
 }
 
@@ -128,7 +128,6 @@ h2 {
 .evento__img,
 .encargos__gallery {
   font-size: 0;
-  box-shadow: var(--box-sh-01);
 }
 
 .obra__img {
@@ -160,7 +159,8 @@ h2 {
 }
 
 .evento__description,
-.encargos__description {
+.encargos__description,
+.opinion__text {
   line-height: 1.5rem;
   text-wrap: pretty;
 }
@@ -203,11 +203,41 @@ h2 {
   transform: rotateY(180deg);
 }
 
-section {
-  border: 1px solid;
+.opinion {
+  padding: 1rem;
+  border-radius: .25rem;
+  background-color: rgb(70, 70, 78);
+  background-color: #cb8a3bb6;
+  box-shadow: var(--box-sh-01);
 }
 
-.opiniones {}
+.opinion__header {
+  text-align: center;
+}
+
+.opinion__avatar {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 5rem;
+  object-fit: cover;
+  filter: drop-shadow(1px 1px 4px rgba(24, 24, 26, 0.75));
+}
+
+.opinion__person {
+  margin-top: 1rem;
+  margin-bottom: .75rem;
+  line-height: 0;
+  font-size: 1.25rem;
+  color: var(--clr-menu-mbl-link);
+}
+
+.opinion__occupation {
+  margin-top: 0;
+}
+
+.opinion__text {
+  color: var(--bgc-body);
+}
 
 /* mobile menu */
 @media screen and (width <=850px) {

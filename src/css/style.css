@@ -20,20 +20,23 @@
   --main-bgc: var(--clr-semi-dark);
   --secondary-bgc: var(--clr-orange);
   --third-bgc: var(--clr-orange-light);
-  --main-font-clr: var(--clr-white);
-  --third-font-clr: var(--clr-orange-middle);
   --fourth-font-clr: var(--clr-gray);
+  --third-font-clr: var(--clr-orange-middle);
+  --main-font-clr: var(--clr-white);
 
+
+  --bgc-menu-item: rgba(214, 173, 125, 0.5);
+  --bgc-card-01: var(--clr-orange-middle--opacity);
   --bgc-body: var(--main-bgc);
   --bgc-header: var(--secondary-bgc);
-  --bgc-footer: var(--main-bgc);
-  --bgc-card-01: var(--clr-orange-middle--opacity);
+  --bgc-footer: var(--secondary-bgc);
+
   --clr-body: var(--main-font-clr);
   --clr-header: var(--clr-black);
+  --clr-footer: var(--clr-black);
   --clr-link: var(--main-font-clr);
   --clr-subtitle: var(--third-font-clr);
   --clr-menu-link: var(--clr-gray);
-  --bgc-menu-item: rgba(214, 173, 125, 0.5);
   --box-sh-01: 2px 2px 15px rgba(3, 3, 3, 0.85);
 }
 
@@ -148,7 +151,7 @@ h2 {
 
 .obra__img,
 .expo__img,
-.encargos__gallery {
+.image-slider {
   font-size: 0;
   box-shadow: var(--box-sh-01);
 }
@@ -198,18 +201,18 @@ h2 {
   text-wrap: pretty;
 }
 
-.encargos__gallery {
+.image-slider {
   position: relative;
 }
 
-.encargos__images {
+.image-slider__images {
   display: flex;
   overflow: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
-.encargos__images img {
+.image-slider__images img {
   aspect-ratio: 1;
   object-fit: cover;
   object-position: top center;
@@ -217,7 +220,7 @@ h2 {
   flex-shrink: 0;
 }
 
-.encargos__controls {
+.image-slider__controls {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -227,13 +230,11 @@ h2 {
   font-size: 0;
 }
 
-.encargos__chevron {
+.image-slider__chevron {
   font-size: 32px;
   opacity: .8;
-}
-
-.encargos__chevron--left {
-  transform: rotateY(180deg);
+  background-color: var(--secondary-bgc);
+  border-radius: 50%;
 }
 
 .opinion {
@@ -274,8 +275,13 @@ h2 {
 }
 
 .footer {
-  background-color: var(--bgc-footer);
   padding: 1rem;
+  background-color: var(--bgc-footer);
+}
+
+.footer,
+footer a {
+  color: var(--clr-black);
 }
 
 p.copy {

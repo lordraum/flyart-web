@@ -15,7 +15,7 @@
   --clr-orange: hsl(30, 65%, 42%);
   --clr-orange-middle: hsl(30, 75%, 57%);
   --clr-orange-middle--opacity: hsla(30, 75%, 57%, 0.8);
-  --clr-orange-light: hsla(30, 55%, 67%, 0.5);
+  --clr-orange-light: hsla(30, 55%, 67%, 0.75);
 
   --main-bgc: var(--clr-semi-dark);
   --secondary-bgc: var(--clr-orange);

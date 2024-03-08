@@ -1,12 +1,17 @@
 import { CiInstagram, CiFacebook } from 'react-icons/ci'
-import { RiThreadsFill } from 'react-icons/ri'
+import { RiThreadsFill, RiTwitterXFill } from 'react-icons/ri'
+import { PiTiktokLogoLight } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 
 export default function SiteFooter () {
   return <footer className="footer">
-    <Link to='#'><CiInstagram /></Link>
-    <Link to='#'><CiFacebook /></Link>
-    <Link to='#'><RiThreadsFill /></Link>
+    <article className="social-links">
+    <Link to='#'><CiInstagram className='social__icon' /></Link>
+    <Link to='#'><CiFacebook className='social__icon' /></Link>
+    <Link to='#'><RiThreadsFill className='social__icon' /></Link>
+    <PiTiktokLogoLight to='#' className='social__icon'/>
+    <RiTwitterXFill to='#' className='social__icon' />
+    </article>
     <p className="copy">
       Laguneta Design, Bogotá Col 2024 ©
     </p>

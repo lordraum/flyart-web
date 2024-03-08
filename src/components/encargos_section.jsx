@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import { FaChevronCircleRight } from 'react-icons/fa'
 import image from '../assets/obra_opt.webp'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function EncargosSection ({ title, description }) {
   const galleryRef = useRef()
@@ -20,7 +21,7 @@ export default function EncargosSection ({ title, description }) {
 
   return (
     <section className="encargos">
-      <h2 className="encargos__title"><a href="#">{title}</a></h2>
+      <h2 className="encargos__title"><Link to="#">{title}</Link></h2>
       <p className="encargos__description">{description}</p>
       <article className="encargos__gallery">
         <div className="encargos__controls">

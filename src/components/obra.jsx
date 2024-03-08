@@ -1,4 +1,5 @@
 import Proptypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 export default function Obra ({ image, altAttr, title, tecnique }) {
   return <article className="obra">
@@ -7,7 +8,7 @@ export default function Obra ({ image, altAttr, title, tecnique }) {
     </div>
     <div className="obra__info" role='contentinfo' aria-label='card-body'>
       <h3 className="obra__title">
-        <a href="#">{title}</a></h3>
+        <Link to="#">{title}</Link></h3>
       <p className="obra__tecnique">{tecnique}</p>
     </div>
   </article>

@@ -1,4 +1,4 @@
-import Evento from './evento'
+import Expo from './expo'
 import imgLaPazAnte from '../assets/flyart_exposición_la_paz_ante_tus_ojos.webp'
 
 const eventos = [
@@ -35,14 +35,14 @@ const eventos = [
   }
 ]
 
-export default function eventosSection () {
+export default function ExposSection () {
   return (
-    <section className="eventos">
-      <h2><a href="#">Eventos</a></h2>
-      <div className="eventos__box">
+    <section className="expos">
+      <h2><a href="#">Exposiciones</a></h2>
+      <div className="expos__box">
       {
         eventos.map(({ id, img, alt, title, description, link }) => {
-          return <Evento
+          return <Expo
           key={id}
           img={img}
           alt={alt}

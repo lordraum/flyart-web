@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function SiteFooter () {
   return <footer className="footer">
+    <div className="footer__box">
     <article className="social-links">
     <Link to='#'><CiInstagram className='social__icon' /></Link>
     <Link to='#'><CiFacebook className='social__icon' /></Link>
@@ -15,5 +16,6 @@ export default function SiteFooter () {
     <p className="copy">
       Laguneta Design, Bogotá Col 2024 ©
     </p>
+    </div>
   </footer>
 }

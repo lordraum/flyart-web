@@ -76,6 +76,7 @@ export default function OpinionesSection () {
   return (
     <section className="opiniones">
       <h2 className="opiniones__title">Opiniones</h2>
+      <div className="opiniones__box">
       {opiniones.map(({ img, person, occupation, text, link }) =>
         <Opinion key={person}
         img={img}
@@ -85,6 +86,7 @@ export default function OpinionesSection () {
         link={link}
         />
       )}
+      </div>
     </section>
   )
 }

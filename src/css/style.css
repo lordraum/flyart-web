@@ -1,42 +1,23 @@
 :root {
-  color-scheme: light dark;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* custom properties mobile first */
+  /* custom propeties */
 
-  --clr-black: hsl(0, 0%, 0%);
-  --clr-semi-dark: hsl(0, 0%, 14%);
-  --clr-gray: hsl(30, 10%, 20%);
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-orange: hsl(30, 65%, 42%);
-  --clr-orange-middle: hsl(30, 75%, 57%);
-  --clr-orange-middle--opacity: hsla(30, 75%, 57%, 0.8);
-  --clr-orange-light: hsla(30, 55%, 67%, 0.315);
+  --main-color: hsl(0, 0%, 14%);
+  --secondary-color: hsl(30, 65%, 42%);
+  --secondary-color-middle: hsl(30, 75%, 57%);
+  --secondary-color-opacity: hsla(30, 75%, 57%, 0.8);
+  --third-color: hsla(0, 0%, 100%, 0.9);
+  --hero-text-color: hsl(0, 0%, 0%);
+  --accent-color-1: hsl(30, 10%, 20%);
+  --accent-color-2: hsla(30, 55%, 67%, 0.315);
 
-  --main-bgc: var(--clr-semi-dark);
-  --secondary-bgc: var(--clr-orange);
-  --third-bgc: var(--clr-orange-light);
-  --fourth-font-clr: var(--clr-gray);
-  --third-font-clr: var(--clr-orange-middle);
-  --main-font-clr: var(--clr-white);
+  --secondary-color--hover: hsl(30, 84%, 51%);
 
-
-  --bgc-menu-item: var(--clr-orange-light);
-  --bgc-card-01: var(--clr-orange-middle--opacity);
-  --bgc-body: var(--main-bgc);
-  --bgc-header: var(--secondary-bgc);
-  --bgc-footer: var(--secondary-bgc);
-
-  --clr-body: var(--main-font-clr);
-  --clr-header: var(--clr-black);
-  --clr-footer: var(--clr-black);
-  --clr-link: var(--main-font-clr);
-  --clr-subtitle: var(--third-font-clr);
-  --clr-menu-link: var(--clr-gray);
   --box-sh-01: 2px 2px 15px rgba(3, 3, 3, 0.85);
 }
 
@@ -47,8 +28,8 @@
 }
 
 body {
-  color: var(--clr-body);
-  background-color: var(--bgc-body);
+  color: var(--third-color);
+  background-color: var(--main-color);
   font-family: 'Open Sans Variable', sans-serif;
   scroll-behavior: smooth;
 }
@@ -77,11 +58,19 @@ h2 {
 h2,
 h2 a,
 h3 a {
-  color: var(--clr-subtitle);
+  color: var(--secondary-color-middle);
+}
+
+h1,
+h2,
+h3,
+h2 a,
+h3 a {
+  font-family: "Baumans", system-ui;
 }
 
 a {
-  color: var(--clr-link);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -123,8 +112,8 @@ article:last-of-type p {
 
 .header {
   padding-block: 2rem;
-  color: var(--clr-header);
-  background-color: var(--bgc-header);
+  color: var(--hero-text-color);
+  background-color: var(--secondary-color);
 }
 
 .nav {
@@ -140,8 +129,26 @@ article:last-of-type p {
   display: none;
 }
 
+.hero {
+  opacity: .9;
+}
+
 .hero__logo {
   filter: contrast();
+}
+
+.hero__title {
+  margin-bottom: .25rem;
+}
+
+.hero__occupation,
+.hero__slogan {
+  margin: .1rem;
+}
+
+.hero__occupation {
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
 .obra__img,
@@ -223,13 +230,15 @@ article:last-of-type p {
   width: 100%;
   padding-inline: .5rem;
   font-size: 0;
+  scrollbar-color: transparent;
 }
 
 .image-slider__chevron {
   font-size: 32px;
   opacity: .8;
-  background-color: var(--secondary-bgc);
+  background-color: var(--secondary-color);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .opiniones__box {
@@ -241,8 +250,9 @@ article:last-of-type p {
 .opinion {
   padding: 1rem;
   border-radius: .25rem;
-  background-color: var(--bgc-card-01);
+  background-color: var(--secondary-color-opacity);
   box-shadow: var(--box-sh-01);
+  transition: .5s;
 }
 
 .opinion__header {
@@ -262,7 +272,11 @@ article:last-of-type p {
   margin-bottom: .75rem;
   line-height: 0;
   font-size: 1.25rem;
-  color: var(--clr-menu-link);
+}
+
+.opinion__person,
+.opinion__text {
+  color: var(--main-color);
 }
 
 .opinion__occupation {
@@ -271,18 +285,14 @@ article:last-of-type p {
   text-shadow: 1px 1px 2px rgba(17, 17, 16, 0.5)
 }
 
-.opinion__text {
-  color: var(--fourth-font-clr);
-}
-
 .footer {
   padding-block: 1rem;
-  background-color: var(--bgc-footer);
+  background-color: var(--secondary-color);
 }
 
 .footer,
 footer a {
-  color: var(--clr-black);
+  color: var(--main-color);
 }
 
 p.copy {
@@ -297,6 +307,11 @@ p.copy {
 
 .social__icon {
   font-size: 1.5rem;
+  transition: .2s;
+}
+
+.social__icon:hover {
+  transform: scale(1.1);
 }
 
 /* mobile menu */
@@ -311,13 +326,13 @@ p.copy {
   }
 
   .nav__menu-item {
-    background-color: var(--bgc-menu-item);
+    background-color: var(--accent-color-2);
     padding-block: .5rem;
     margin-bottom: 1px;
   }
 
   .nav__menu-link {
-    color: var(--clr-menu-link);
+    color: var(--accent-color-1);
   }
 
   .toggle-menu {
@@ -335,9 +350,10 @@ p.copy {
   .toggle-menu__bars {
     height: 3px;
     width: 100%;
-    background-color: #242424;
+    background-color: var(--hero-text-color);
     transition: all .5s;
     transform-origin: left;
+    opacity: .9;
   }
 
   /* active */
@@ -418,16 +434,58 @@ p.copy {
 
 @media screen and (width > 850px) {
 
+  .header {
+    padding-block: 0;
+  }
+
+  .hero {
+    padding-block: 1.75rem;
+  }
+
+  .hero__title {
+    margin-top: 1rem;
+  }
+
+  .nav {
+    position: relative;
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 7px -2px hsl(24, 83%, 21%);
+  }
+
   .nav__menu {
-    gap: 2rem;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    margin-block: 0;
   }
 
   .nav__menu-link {
-    font-family: 'Baumans', system-ui;
-    color: var(--clr-header);
+    color: var(--secondary-color-middle);
+    font-weight: 700;
+    padding: 1.75rem;
+    display: inline-block;
+    transition: all .3s;
   }
+
+  /* active states */
+
+  .nav__menu-link:hover {
+    color: var(--secondary-color--hover);
+    scale: 1.05;
+  }
+
+  h2 a:hover,
+  h3 a:hover {
+    color: var(--secondary-color--hover);
+  }
+
+  .hero__logo:hover {
+    filter: drop-shadow(0 0 1.5rem #e0853a8e);
+  }
+
+  .opinion:hover {
+    cursor: pointer;
+    transform: translateY(3px);
+  }
+
 }
 
 @media screen and (width > 1023px) {
@@ -489,7 +547,7 @@ p.copy {
   }
 
   body {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .obra {
@@ -509,13 +567,5 @@ p.copy {
 
   .image-slider__images img {
     width: 24%;
-  }
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
   }
 }

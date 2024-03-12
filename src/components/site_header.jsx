@@ -3,7 +3,7 @@ import logo from '../assets/logo-flyart.png'
 import Proptypes from 'prop-types'
 import Nav from './nav'
 
-export default function SiteHeader ({ person, occupation, institution }) {
+export default function SiteHeader ({ person, occupation, slogan }) {
   return (
     <header className="header">
       <Nav/>
@@ -12,9 +12,9 @@ export default function SiteHeader ({ person, occupation, institution }) {
           <img className='hero__logo' src={logo} alt="logo flyart" />
         </Link>
         <div className='hero__info'>
-        <h1>{person}</h1>
-          <p className="occupation">{occupation}</p>
-          <p className="institution">{institution}</p>
+        <h1 className='hero__title'>{person}</h1>
+          <p className="hero__occupation">{occupation}</p>
+          <p className="hero__slogan">{slogan}</p>
         </div>
       </article>
     </header>
@@ -24,5 +24,5 @@ export default function SiteHeader ({ person, occupation, institution }) {
 SiteHeader.propTypes = {
   person: Proptypes.string,
   occupation: Proptypes.string,
-  institution: Proptypes.string
+  slogan: Proptypes.string
 }

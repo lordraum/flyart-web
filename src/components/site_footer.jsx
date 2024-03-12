@@ -10,8 +10,10 @@ export default function SiteFooter () {
     <Link to='#'><CiInstagram className='social__icon' /></Link>
     <Link to='#'><CiFacebook className='social__icon' /></Link>
     <Link to='#'><RiThreadsFill className='social__icon' /></Link>
-    <PiTiktokLogoLight to='#' className='social__icon'/>
-    <RiTwitterXFill to='#' className='social__icon' />
+    <Link to='#'><PiTiktokLogoLight className='social__icon'/>
+    </Link>
+    <Link to='#'><RiTwitterXFill className='social__icon' />
+    </Link>
     </article>
     <p className="copy">
       Laguneta Design, Bogotá Col 2024 ©

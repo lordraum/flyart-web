@@ -5,9 +5,9 @@ import SiteFooter from '../components/site_footer'
 export default function Root ({ children }) {
   return <>
   <SiteHeader
-    person={'Johan Gómez "Flyart"'}
+    person={'Johan Gómez'}
     occupation={'Artista Plástico'}
-    institution={'Universidad Antonio Nariño'}
+    slogan={'"El dibujo es un engaño Mágico"'}
   />
     <main className="main">
       {children}

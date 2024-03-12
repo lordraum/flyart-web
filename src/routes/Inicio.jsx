@@ -22,8 +22,3 @@ export default function Inicio () {
     </Root>
   </>
 }
-
-/* SEOText.propTypes = {
-  title: Proptypes.string.isRequired,
-  text: Proptypes.string.isRequired
-} */

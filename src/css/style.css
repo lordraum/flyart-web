@@ -151,6 +151,14 @@ article:last-of-type p {
   font-size: 1.05rem;
 }
 
+.obras__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 3rem;
+}
+
+
 .obra__img,
 .expo__img,
 .image-slider {
@@ -396,10 +404,8 @@ p.copy {
   }
 
   .obras__box {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 2rem;
   }
 
   .obra {
@@ -534,9 +540,6 @@ p.copy {
     padding: 1.5rem;
   }
 
-  .obras__box {
-    gap: 1rem;
-  }
 }
 
 @media screen and (width > 1439px) {

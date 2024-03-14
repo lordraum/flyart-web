@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ImageSlider from './image_slider'
+import ImageSlider from './Image_slider'
 
 const title = 'Transforma tus sueños en arte: ¡Haz tu encargo personalizado ahora!'
 

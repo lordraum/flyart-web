@@ -171,7 +171,7 @@ article:last-of-type p {
 }
 
 .obra__tecnique {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .expos__box {
@@ -214,6 +214,10 @@ article:last-of-type p {
   scroll-behavior: smooth;
 }
 
+.image-slider__images::-webkit-scrollbar {
+  display: none;
+}
+
 .image-slider__images img {
   aspect-ratio: 1;
   object-fit: cover;
@@ -230,7 +234,6 @@ article:last-of-type p {
   width: 100%;
   padding-inline: .5rem;
   font-size: 0;
-  scrollbar-color: transparent;
 }
 
 .image-slider__chevron {
@@ -248,6 +251,9 @@ article:last-of-type p {
 }
 
 .opinion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
   border-radius: .25rem;
   background-color: var(--secondary-color-opacity);
@@ -282,7 +288,10 @@ article:last-of-type p {
 .opinion__occupation {
   margin-top: 0;
   opacity: .9;
-  text-shadow: 1px 1px 2px rgba(17, 17, 16, 0.5)
+}
+
+.opinion__body {
+  border: 1px solid;
 }
 
 .footer {
@@ -390,6 +399,7 @@ p.copy {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 2rem;
   }
 
   .obra {
@@ -403,15 +413,6 @@ p.copy {
 
   .expo img {
     width: 40%;
-  }
-
-  .opiniones__box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    grid-gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    grid-auto-flow: dense;
   }
 
   .image-slider__images {
@@ -465,6 +466,20 @@ p.copy {
     transition: all .3s;
   }
 
+  .opiniones__box {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .opinion {
+    flex-basis: 48%;
+  }
+
+  .opinion__text {
+    height: 100%;
+  }
+
   /* active states */
 
   .nav__menu-link:hover {
@@ -488,11 +503,7 @@ p.copy {
 
 }
 
-@media screen and (width > 1023px) {
-  .opiniones__box {
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  }
-}
+@media screen and (width > 1023px) {}
 
 @media screen and (width > 1279px) {
 
@@ -516,12 +527,7 @@ p.copy {
   }
 
   .image-slider__images img {
-    width: 33%;
-  }
-
-  .opiniones__box {
-    /* grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); */
-    gap: 2.5rem;
+    width: 32.5%;
   }
 
   .opinion {
@@ -530,10 +536,6 @@ p.copy {
 
   .obras__box {
     gap: 1rem;
-  }
-
-  .opinion:last-child {
-    grid-column: 1 / 3;
   }
 }
 

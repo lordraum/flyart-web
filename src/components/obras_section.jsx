@@ -1,4 +1,4 @@
-import Obra from './obra'
+import Obra from './Obra'
 
 const obras = [
   {

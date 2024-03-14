@@ -1,4 +1,4 @@
-import Opinion from './opinion'
+import Opinion from './Opinion'
 
 const opiniones = [
   {

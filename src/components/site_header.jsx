@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo-flyart.png'
 import Proptypes from 'prop-types'
-import Nav from './nav'
+import Nav from './Nav'
 
 export default function SiteHeader ({ person, occupation, slogan }) {
   return (

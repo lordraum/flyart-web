@@ -11,14 +11,14 @@ const opiniones = [
     img: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D',
     person: 'Javier Torres',
     occupation: 'Curador de museo',
-    text: 'Me quedé sin palabras al contemplar tu obra. Es como si pudiera sentir la energía que emanaba de cada trazo. Cada pieza cuenta una historia única y poderosa, que deja una impresión duradera en el corazón del espectador.',
+    text: 'Me quedé sin palabras al contemplar tu obra. Es como si pudiera sentir la energía que emanaba de cada trazo. Cada pieza cuenta una historia única y poderosa, que deja una impresión duradera en el corazón del espectador. Cada pieza cuenta una historia única y poderosa, que deja una impresión duradera en el corazón del espectador',
     link: 'https://example.com/review2'
   },
   {
     img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D',
     person: 'Ana Gómez',
     occupation: 'Coleccionista de arte',
-    text: 'Tu creatividad y talento son asombrosos. Cada una de tus obras es una ventana a un mundo de belleza y expresión. Me siento profundamente inspirada por la forma en que desafías las convenciones y exploras nuevos territorios artísticos. Tu arte es un regalo para el mundo, y estoy agradecida de poder experimentarlo. Me siento profundamente inspirada por la forma en que desafías las convenciones y exploras nuevos territorios artísticos. Tu arte es un regalo para el mundo, y estoy agradecida de poder experimentarlo.',
+    text: 'Tu creatividad y talento son asombrosos. Cada una de tus obras es una ventana a un mundo de belleza y expresión. Me siento profundamente inspirada por la forma en que desafías',
     link: 'https://example.com/review3'
   },
   {
@@ -53,7 +53,7 @@ const opiniones = [
     img: 'https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D',
     person: 'Daniel González',
     occupation: 'Entusiasta del arte',
-    text: 'Tu arte es una celebración de la vida y la creatividad. Cada obra es una explosión de color y energía, reflejando la belleza y la diversidad del mundo que nos rodea. Tu habilidad para capturar la esencia de un momento en el lienzo es verdaderamente inspiradora. Estoy emocionado de ver cómo evoluciona tu arte en el futuro.',
+    text: 'Tu arte es una celebración de la vida y la creatividad. Cada obra es una explosión de color y energía, reflejando la belleza y la diversidad del mundo que nos rodea. ',
     link: 'https://example.com/review8'
   },
   {
@@ -67,7 +67,7 @@ const opiniones = [
     img: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbmF8ZW58MHx8MHx8fDA%3D',
     person: 'Pablo Torres',
     occupation: 'Coleccionista de arte',
-    text: 'Tu arte es una inspiración para todos los que tienen el privilegio de experimentarlo. Cada obra es una expresión única de tu visión y creatividad, invitando al espectador a contemplar el mundo a través de tus ojos. Tu habilidad para transmitir emociones a través del lienzo es verdaderamente excepcional. ¡Espero con ansias ver más de tu increíble arte! ¡Espero con ansias ver más de tu increíble arte! ',
+    text: 'Tu arte es una inspiración para todos los que tienen el privilegio de experimentarlo. Cada obra es una expresión única de tu visión y creatividad, invitando al espectador a contemplar el mundo a través de tus ojos. ',
     link: 'https://example.com/review10'
   }
 ]

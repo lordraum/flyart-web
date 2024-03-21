@@ -7,7 +7,7 @@ import '@fontsource-variable/open-sans'
 import '@fontsource/baumans'
 import Inicio from './routes/inicio'
 import AcercaDe from './routes/acerca_de'
-import Obras from './routes/obras'
+import Galeria from './routes/galeria'
 import Logros from './routes/logros'
 
 const router = createBrowserRouter([
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
     element: <AcercaDe />
   },
   {
-    path: '/obras',
-    element: <Obras />
+    path: '/galeria',
+    element: <Galeria />
   },
   {
     path: '/logros',

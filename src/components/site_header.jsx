@@ -12,7 +12,7 @@ export default function SiteHeader ({ person, occupation, slogan }) {
           <img className='hero__logo' src={logo} alt="logo flyart" />
         </Link>
         <div className='hero__info'>
-        <h1 className='hero__title'>{person}</h1>
+        <h2 className='hero__title'>{person}</h2>
           <p className="hero__occupation">{occupation}</p>
           <p className="hero__slogan">{slogan}</p>
         </div>

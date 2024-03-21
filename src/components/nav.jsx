@@ -7,8 +7,8 @@ const menuItems = [
     path: '/'
   },
   {
-    page: 'Obras',
-    path: '/obras'
+    page: 'Galería',
+    path: '/galeria'
   },
   {
     page: 'Logros',

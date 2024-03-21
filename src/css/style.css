@@ -139,6 +139,7 @@ article:last-of-type p {
 
 .hero__title {
   margin-bottom: .25rem;
+  color: var(--hero-text-color);
 }
 
 .hero__occupation,
@@ -296,6 +297,10 @@ article:last-of-type p {
 .opinion__occupation {
   margin-top: 0;
   opacity: .9;
+}
+
+.seo-text__title {
+  margin-bottom: 0;
 }
 
 .footer {

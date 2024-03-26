@@ -91,6 +91,20 @@ article:last-of-type p {
 /*  */
 
 /* mobile first */
+
+.button {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+  border-radius: .25rem;
+  transition: all .2s;
+}
+
+.button:hover {
+  background-color: var(--secondary-color--hover);
+  scale: 1.02;
+}
+
 .main,
 .nav__menu,
 .footer__box {
@@ -172,7 +186,14 @@ article:last-of-type p {
   width: 100%;
   object-fit: cover;
   object-position: 0 50%;
+  transition: all .2s;
 }
+
+.obra__img:hover {
+  scale: 1.01;
+}
+
+
 
 .obra__title {
   margin-bottom: 0;
@@ -441,6 +462,11 @@ p.copy {
 }
 
 @media screen and (width > 850px) {
+
+  .button {
+    width: max-content;
+    padding-inline: 2rem;
+  }
 
   .header {
     padding-block: 0;

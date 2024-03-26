@@ -17,15 +17,18 @@ const images = [
 
 export default function EncargosSection () {
   return (
-    <section className="encargos">
-      <h2 className="encargos__title"><Link to="#">{title}</Link></h2>
-      <p className="encargos__description">{description}</p>
+    <section className='encargos'>
+      <h2 className='encargos__title'><Link to='#'>{title}</Link></h2>
+      <p className='encargos__description'>{description}</p>
+      <a href='#' className='button'>
+        Contactar
+      </a>
       <ImageSlider
-      title={title}
-      description={description}
+        title={title}
+        description={description}
       >
         {images.map((image) =>
-          <img key={image} src={image} alt="Temporary image" />
+          <img key={image} src={image} alt='Temporary image' />
         )}
       </ImageSlider>
     </section>

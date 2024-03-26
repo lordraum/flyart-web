@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'standard',
+    './node_modules/eslint-config-standard-jsx/eslintrc.json',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended'

@@ -20,31 +20,25 @@ export default function ImageSlider ({ children }) {
     }
   }
   return (
-    <article className="image-slider">
-        <div className="image-slider__controls">
-          <FaChevronCircleLeft
-            onClick={() => handleClick('left')}
-            data-chevron="left"
-            className='image-slider__chevron'/>
-          <FaChevronCircleRight
-            onClick={() => handleClick('right')}data-chevron="right"
-            className='image-slider__chevron'/>
-        </div>
-        <div
-          ref={imagesRef}
-          className="image-slider__images"
-        >
-          {children}
-          {/* <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" />
-          <img src={image} alt="sfd" /> */}
-        </div>
-      </article>
+    <article className='image-slider'>
+      <div className='image-slider__controls'>
+        <FaChevronCircleLeft
+          onClick={() => handleClick('left')}
+          data-chevron='left'
+          className='image-slider__chevron'
+        />
+        <FaChevronCircleRight
+          onClick={() => handleClick('right')} data-chevron='right'
+          className='image-slider__chevron'
+        />
+      </div>
+      <div
+        ref={imagesRef}
+        className='image-slider__images'
+      >
+        {children}
+      </div>
+    </article>
   )
 }
 

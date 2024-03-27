@@ -105,6 +105,10 @@ article:last-of-type p {
   scale: 1.02;
 }
 
+.button--encargos {
+  margin-bottom: 1.75rem;
+}
+
 .main,
 .nav__menu,
 .footer__box {

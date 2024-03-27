@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ImageSlider from './ImageSlider'
+import Button from './Button'
 
 const title = 'Transforma tus sueños en arte: ¡Haz tu encargo personalizado ahora!'
 
@@ -20,9 +21,7 @@ export default function EncargosSection () {
     <section className='encargos'>
       <h2 className='encargos__title'><Link to='#'>{title}</Link></h2>
       <p className='encargos__description'>{description}</p>
-      <a href='#' className='button'>
-        Contactar
-      </a>
+      <Button classModificators='button--encargos' />
       <ImageSlider
         title={title}
         description={description}

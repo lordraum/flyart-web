@@ -28,7 +28,7 @@ export default function Nav () {
   }
 
   return (
-    <nav className="nav">
+    <nav className='nav'>
       <ul className={`nav__menu ${isMenuActive ? 'nav__menu--active' : ''}`}>
         {menuItems.map(({ page, path }) => (
           <li className='nav__menu-item' key={page}>
@@ -36,10 +36,10 @@ export default function Nav () {
           </li>
         ))}
       </ul>
-      <div onClick={handleToggle} className={`toggle-menu ${isMenuActive ? 'toggle-menu--active' : ''}`} role="button">
-        <div className="toggle-menu__bars"></div>
-        <div className="toggle-menu__bars"></div>
-        <div className="toggle-menu__bars"></div>
+      <div onClick={handleToggle} className={`toggle-menu ${isMenuActive ? 'toggle-menu--active' : ''}`} role='button'>
+        <div className='toggle-menu__bars' />
+        <div className='toggle-menu__bars' />
+        <div className='toggle-menu__bars' />
       </div>
     </nav>
   )

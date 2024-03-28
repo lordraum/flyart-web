@@ -5,16 +5,16 @@ import Nav from './Nav'
 
 export default function SiteHeader ({ person, occupation, slogan }) {
   return (
-    <header className="header">
-      <Nav/>
-      <article className="hero">
-        <Link to={'/'}>
-          <img className='hero__logo' src={logo} alt="logo flyart" />
+    <header className='header'>
+      <Nav />
+      <article className='hero'>
+        <Link to='/'>
+          <img className='hero__logo' src={logo} alt='logo flyart' />
         </Link>
         <div className='hero__info'>
-        <h2 className='hero__title'>{person}</h2>
-          <p className="hero__occupation">{occupation}</p>
-          <p className="hero__slogan">{slogan}</p>
+          <h2 className='hero__title'>{person}</h2>
+          <p className='hero__occupation'>{occupation}</p>
+          <p className='hero__slogan'>{slogan}</p>
         </div>
       </article>
     </header>

@@ -1,6 +1,7 @@
 import Opinion from './Opinion'
+import { useFetch } from '../useFetch'
 
-const opiniones = [
+/* const opiniones = [
   {
     img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D',
     person: 'María López',
@@ -70,22 +71,26 @@ const opiniones = [
     text: 'Tu arte es una inspiración para todos los que tienen el privilegio de experimentarlo. Cada obra es una expresión única de tu visión y creatividad, invitando al espectador a contemplar el mundo a través de tus ojos. ',
     link: 'https://example.com/review10'
   }
-]
+] */
 
 export default function OpinionesSection () {
+  const { data: opiniones, loading } = useFetch('http://localhost:1234/opiniones')
   return (
-    <section className="opiniones">
-      <h2 className="opiniones__title">Opiniones</h2>
-      <div className="opiniones__box">
-      {opiniones.map(({ img, person, occupation, text, link }) =>
-        <Opinion key={person}
-        img={img}
-        person={person}
-        occupation={occupation}
-        text={text}
-        link={link}
-        />
-      )}
+
+    <section className='opiniones'>
+      <h2 className='opiniones__title'>Opiniones</h2>
+      <div className='opiniones__box'>
+        {loading && <div>... Cargando</div>}
+        {opiniones?.map(({ id, img, person, occupation, text, link }) =>
+          <Opinion
+            key={id}
+            img={img}
+            person={person}
+            occupation={occupation}
+            text={text}
+            link={link}
+          />
+        )}
       </div>
     </section>
   )
